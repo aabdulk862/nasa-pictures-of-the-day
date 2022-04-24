@@ -1,20 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NASA API Pictures</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=www.nasa.gov">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://s2.googleusercontent.com/s2/favicons?domain=www.nasa.gov"
+    />
     <!-- ZTM Favicon -->
     <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
-</head>
-<body>
+  </head>
+  <body>
     <!-- Loader -->
     <div class="loader hidden">
-        <img src="rocket.svg" alt="Loading">
+      <img src="rocket.svg" alt="Loading" />
+    </div>
+    <!-- Container -->
+    <div class="container">
+      <!-- Navigation -->
+      <div class="navigation-container">
+        <span class="background"></span>
+        <!-- Results Nav -->
+        <span class="navigation-items" id="resultsNav">
+          <h3 class="clickable">Favorites</h3>
+          <h3>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</h3>
+          <h3 class="clickable">Load More</h3>
+          <!-- Favorites Nav -->
+          <span class="navigation-items hidden" id="favoritesNav">
+              <h3 class="clickable">Load More NASA Images</h3>
+          </span>
+        </span>
+      </div>
+      <!-- Images Container -->
+      <div class="images-container">
+
+        <div class="card">
+            <a href="" title="View Full Image" target="_blank">
+                <img src="https://apod.nasa.gov/apod/image/2204/M104_HST_final2_4096.jpg" alt="NASA Picture of the Day" class="card-img-top">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Title of Image</h5>
+                <p class="clickable">Add to Favorites</p>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia explicabo exercitationem, quaerat maiores vitae sit odio vel rerum sapiente delectus tenetur tempore error iure laudantium provident optio dolores ipsam deserunt? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero minus impedit, modi delectus ipsum. Quae eveniet dignissimos autem natus facere voluptates, voluptate nam, architecto id ipsam sit magni inventore!</p>
+                <small class="text-muted">
+                    <strong>12-12-2022</strong>
+                    <span>Copyright Info</span>
+                </small>
+            </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Save Confirmation -->
+    <div class="save-confirmed" hidden>
+        <h1>ADDED!</h1>
     </div>
     <!-- Script -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
